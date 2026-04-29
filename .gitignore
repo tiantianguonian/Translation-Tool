@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Cache
+.cache/
+
+# Quality logs (generated at runtime)
+production/quality_logs/*.jsonl
+
+# Reports (generated at runtime)
+production/reports/*.md
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+
+# Git
+.git/

@@ -1,0 +1,10 @@
+{"sample_id": "ui_001", "text_type": "UI", "source_text": "Start Game", "target_lang": "zh-cn"}
+{"sample_id": "ui_002", "text_type": "UI", "source_text": "Settings\nVolume", "target_lang": "zh-cn"}
+{"sample_id": "dialogue_001", "text_type": "dialogue", "source_text": "Hello, brave adventurer! Are you ready to begin your quest?", "target_lang": "zh-cn"}
+{"sample_id": "dialogue_002", "text_type": "dialogue", "source_text": "I haven't seen the likes of you in many years...", "target_lang": "zh-cn"}
+{"sample_id": "skill_001", "text_type": "skill", "source_text": "Fire Ball - Deals {0} fire damage to all enemies in range", "target_lang": "zh-cn"}
+{"sample_id": "quest_001", "text_type": "quest", "source_text": "Defeat the Ice Golem in Frozen Cave. Reward: {0} gold", "target_lang": "zh-cn"}
+{"sample_id": "system_001", "text_type": "system", "source_text": "Server maintenance in {0} minutes. Please save your progress.", "target_lang": "zh-cn"}
+{"sample_id": "unit_talk_001", "text_type": "dialogue", "source_text": "[unit_talk:hero_01] For the kingdom!", "target_lang": "zh-cn"}
+{"sample_id": "unit_talk_002", "text_type": "dialogue", "source_text": "Watch out! [unit_talk:danger_03] Enemy approaching!", "target_lang": "zh-cn"}
+{"sample_id": "placeholder_001", "text_type": "UI", "source_text": "{0} / {1} HP || Level {2}", "target_lang": "zh-cn"}

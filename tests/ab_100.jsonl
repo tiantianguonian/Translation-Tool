@@ -1,0 +1,4 @@
+# AB-100 Dataset (100 samples for A/B comparison)
+# Format: one JSON object per line (JSONL)
+# Text types: 20 each UI, dialogue, skill, quest, system
+# Includes edge cases: placeholders, newlines, pipes, unit_talk, CJK-heavy, emoji

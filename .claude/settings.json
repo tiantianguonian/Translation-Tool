@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Write",
+      "Edit",
+      "Glob",
+      "Grep",
+      "Bash(python src/*.py)",
+      "Bash(python tests/*.py)",
+      "Bash(cat production/**)",
+      "Bash(bash .claude/hooks/*.sh)",
+      "WebFetch",
+      "WebSearch"
+    ],
+    "deny": []
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "",
+        "command": "bash .claude/hooks/session-start.sh"
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash(python src/translate_multi_language.py*)",
+        "command": "bash .claude/hooks/pre-run.sh"
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write(production/quality_logs/*.jsonl)",
+        "command": "bash .claude/hooks/validate-jsonl.sh ${FILE_PATH}"
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "echo 'V3.5 | $(cat production/session-state/active.md 2>/dev/null | head -5 | tail -1 || echo idle)'"
+  }
+}
